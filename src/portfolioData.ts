@@ -67,7 +67,7 @@ export const portfolioData = {
     }
   ],
   contact: {
-    location: "UVM Azcapotzalco, Mexico City",
+    location: "UAM Azcapotzalco, Mexico City",
     email: "viris30pop@gmail.com",
     cellphone: "55-20-71-38-65"
   },
