@@ -5,7 +5,6 @@ import shrek from './assets/shrek.webp';
 import squidward_plate from './assets/squidward_plate.webp';
 import squidward from './assets/squidward.webp';
 import profile from './assets/profile.webp';
-import cat from './assets/cat.webp';
 
 export const portfolioData = {
   author: {
