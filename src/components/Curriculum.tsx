@@ -11,12 +11,15 @@ const Curriculum: React.FC = () => {
             <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 {/* Photo with Parallax */}
-                <div className="relative h-[400px] md:h-[600px] w-full overflow-hidden flex items-center justify-center bg-[#1a1a1a]">
+                <div className="relative h-[400px] md:h-[600px] w-full overflow-hidden flex items-end justify-end bg-[#1a1a1a]">
                     <motion.div
-                        style={{ y }}
+                        style={{
+                            y,
+                            backgroundImage: `url(${portfolioData.author.picture})`
+                        }}
                         className="absolute inset-0 w-full h-[120%] bg-center bg-cover opacity-80"
-                        // Placeholder background image, can be replaced by real photo
-                        initial={{ backgroundImage: `url('https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&q=80&w=1000')` }}
+                    // Placeholder background image, can be replaced by real photo
+                    //initial={{ backgroundImage: `url(${portfolioData.author.picture})` }}
                     />
                     <div className="z-10 border border-secondary p-8 backdrop-blur-sm bg-black/20">
                         <h2 className="text-3xl font-bold tracking-widest uppercase">{portfolioData.author.name}</h2>
@@ -32,10 +35,26 @@ const Curriculum: React.FC = () => {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h3 className="text-4xl font-bold tracking-tighter mb-6">About the Designer</h3>
-                        <p className="text-lg leading-relaxed mb-12 text-secondary/80">
+                        <h3 className="text-4xl font-bold tracking-tighter mb-3">Sobre Mí</h3>
+                        <p className="text-sm leading-relaxed mb-6 text-secondary/80">
                             {portfolioData.author.bio}
                         </p>
+                        <div className='flex justify-between'>
+                            <div className='w-9/20'>
+                                <h4 className='text-xl font-bold uppercase tracking-widest mb-3 border-b border-secondary/30 pb-2 inline-block'>Misión</h4>
+                                <p className="text-sm leading-relaxed mb-3 text-secondary/80">
+                                    {portfolioData.author.mission}
+                                </p>
+                            </div>
+                            <div className='w-9/20'>
+                                <h4 className='text-xl font-bold uppercase tracking-widest mb-3 border-b border-secondary/30 pb-2 inline-block'>Visión</h4>
+                                <p className="text-sm leading-relaxed mb-3 text-secondary/80">
+                                    {portfolioData.author.vision}
+                                </p>
+                            </div>
+                        </div>
+
+
                     </motion.div>
 
                     <motion.div
@@ -61,7 +80,7 @@ const Curriculum: React.FC = () => {
                                     className="flex items-center space-x-3 text-lg"
                                 >
                                     <span className="w-2 h-2 rounded-full bg-secondary" />
-                                    <span>{skill}</span>
+                                    <span className="text-sm">{skill}</span>
                                 </motion.li>
                             ))}
                         </ul>

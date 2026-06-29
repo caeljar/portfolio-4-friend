@@ -1,59 +1,81 @@
+import custom_tenis from './assets/custom_tenis.webp';
+import mickey from './assets/mickey.webp';
+import stitch from './assets/stitch.webp';
+import shrek from './assets/shrek.webp';
+import squidward_plate from './assets/squidward_plate.webp';
+import squidward from './assets/squidward.webp';
+import profile from './assets/profile.webp';
+import cat from './assets/cat.webp';
+
 export const portfolioData = {
   author: {
     name: "Lizeth Cruz",
-    role: "Industrial Designer",
-    philosophy: "Merging form, function, and futuristic aesthetics to create objects with meaning. I believe design is not just about how things look, but how they work and interact with the human experience.",
-    bio: "I am an Industrial Designer based in Mexico City, specializing in contemporary product design and conceptual prototypes. With a background in mechanical engineering and a passion for minimalist aesthetics, I strive to create designs that are both striking and practical.",
+    role: "Diseñadora Industrial",
+    philosophy: '"Creo que un producto debe ser mucho más que un objeto: debe representar una historia, un recuerdo y la personalidad de quien lo recibe."',
+    bio: "Soy diseñadora y creadora de regalos personalizados, especializada en transformar ideas en piezas únicas elaboradas completamente a mano. Mi trabajo combina creatividad, diseño y técnicas artesanales para desarrollar productos inspirados en personajes, series, películas y gustos personales.",
+    mission: "Diseñar y elaborar regalos personalizados que transformen las ideas de mis clientes en piezas únicas y significativas.",
+    vision: "Ser una diseñadora reconocida por la originalidad y calidad de nuestros regalos personalizados, destacando por la innovación en el diseño artesanal y la capacidad de crear piezas exclusivas que transmitan emociones y fortalezcan los momentos especiales de nuestros clientes.",
+    picture: profile
   },
   socials: [
     { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
     { name: "Instagram", url: "https://instagram.com", icon: "instagram" },
-    { name: "Behance", url: "https://behance.net", icon: "behance" }
   ],
   skills: [
-    "SolidWorks",
     "Rhinoceros 3D",
-    "KeyShot",
-    "Rapid Prototyping",
-    "CMF Design",
-    "Design Thinking",
-    "Physical Mockups",
-    "3D Printing"
+    "AutoCAD",
+    "SolidWorks",
+    "Fusion 360",
+    "Adobe Illustrator",
+    "Paquetería Office"
   ],
   projects: [
     {
       id: "project-1",
-      title: "Lumina Chair",
-      description: "A minimalist dining chair focusing on ergonomics and sustainable materials, utilizing bent plywood and aluminum.",
-      image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=1000"
+      title: "Tenis Personalizados",
+      description: "Calzado personalizado y exclusivo transformado en arte funcional mediante aerografía de alta calidad adaptada al cliente.",
+      image: custom_tenis
     },
     {
       id: "project-2",
-      title: "Aether Coffee Maker",
-      description: "An automated pour-over coffee machine concept that embraces transparency and industrial aesthetic with a glass and matte black finish.",
-      image: "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=1000"
+      title: "Figura Mickey Mouse Papercraft",
+      description: "Figura tridimensional detallada de Mickey Mouse armada con precisión mediante el ensamblaje de piezas cortadas y dobladas de papercraft.",
+      image: mickey
     },
     {
       id: "project-3",
-      title: "Vesper Lighting System",
-      description: "Modular ambient lighting solution for modern workspaces, offering adjustable color temperatures and magnetic snap-on diffusers.",
-      image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=1000"
+      title: "Figura Decorativa de Stitch",
+      description: "Escultura artesanal de cerámica inspirada en Stitch (Lilo & Stitch). Modelada totalmente a mano para capturar su expresividad. Es ideal para decorar o coleccionar.",
+      image: stitch
     },
     {
       id: "project-4",
-      title: "Nomad Backpack",
-      description: "A watertight, modular backpack built for urban exploration, featuring magnetic fidlock closures and recycled synthetic fabrics.",
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=1000"
+      title: "Mini Globos: Serpiente y Rana de Shrek",
+      description: "Colección de mini globos decorativos de cerámica artesanal, inspirados en la rana y la serpiente de Shrek. Modelados a mano para capturar la esencia de los personajes, son piezas únicas ideales para decorar o coleccionar.",
+      image: shrek
+    },
+    {
+      id: "project-5",
+      title: "Plato de Calamardo",
+      description: "Este plato artesanal de cerámica, inspirado en Calamardo Tentáculos (Bob Esponja), está modelado y decorado a mano con detalles en relieve. Es una pieza única y funcional que combina creatividad, ideal tanto para servir alimentos como para decorar espacios.",
+      image: squidward_plate
+    },
+    {
+      id: "project-6",
+      title: "Vaso Casa Calamardo",
+      description: "Vaso o decorativo de cerámica 3D inspirado en la casa de Calamardo (Bob Esponja). Ideal para fanáticos y coleccionistas.",
+      image: squidward
     }
   ],
   contact: {
     location: "UVM Azcapotzalco, Mexico City",
-    email: "[EMAIL_ADDRESS]"
+    email: "viris30pop@gmail.com",
+    cellphone: "55-20-71-38-65"
   },
   links: [
-    { name: "Home", to: "hero" },
+    { name: "Inicio", to: "hero" },
     { name: "Curriculum", to: "curriculum" },
-    { name: "Projects", to: "projects" },
-    { name: "Contact", to: "contact" }
+    { name: "Proyectos", to: "projects" },
+    { name: "Contacto", to: "contact" }
   ]
 };

@@ -7,7 +7,11 @@ const Footer: React.FC = () => {
             <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center">
 
                 <p className="text-sm font-medium tracking-widest uppercase mb-4 md:mb-0 opacity-70">
-                    © {new Date().getFullYear()} All Rights Reserved.
+                    © {new Date().getFullYear()} Todos los derechos reservados.
+                </p>
+
+                <p className="text-sm font-medium tracking-widest uppercase mb-4 md:mb-0 opacity-70">
+                    Made With 💗
                 </p>
 
                 <Link
@@ -16,7 +20,7 @@ const Footer: React.FC = () => {
                     duration={800}
                     className="text-sm font-bold tracking-widest uppercase cursor-pointer hover:underline underline-offset-4"
                 >
-                    Back to Top ↑
+                    Vuelta al Inicio ↑
                 </Link>
 
             </div>

@@ -18,8 +18,8 @@ const Contact: React.FC = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-4 mt-8 md:mt-0">Let's Talk.</h2>
-                    <p className="text-lg md:text-xl opacity-70 mb-12">Open for collaborations and inquiries.</p>
+                    <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-4 mt-8 md:mt-0">Hablemos.</h2>
+                    <p className="text-lg md:text-xl opacity-70 mb-12">Apertura para colaboraciones y consultas.</p>
 
                     <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                         <div className="relative group">
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
                                 htmlFor="name"
                                 className="absolute left-0 top-3 text-secondary/50 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-secondary peer-valid:-top-4 peer-valid:text-xs"
                             >
-                                Name
+                                Nombre
                             </label>
                             <div className="absolute bottom-0 left-0 h-[2px] bg-secondary w-0 group-focus-within:w-full transition-all duration-500 ease-out" />
                         </div>
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                                 htmlFor="message"
                                 className="absolute left-0 top-3 text-secondary/50 transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-secondary peer-valid:-top-4 peer-valid:text-xs"
                             >
-                                Message
+                                Mensaje
                             </label>
                             <div className="absolute bottom-0 left-0 h-[2px] bg-secondary w-0 group-focus-within:w-full transition-all duration-500 ease-out" />
                         </div>
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                             whileHover={{ scale: 1.05 }}
                             className="mt-8 px-12 py-4 bg-secondary text-primary font-bold tracking-widest uppercase hover:bg-secondary/90 transition-colors"
                         >
-                            Send Request
+                            Enviar
                         </motion.button>
                     </form>
                 </motion.div>
@@ -94,13 +94,16 @@ const Contact: React.FC = () => {
                     <div className="w-16 h-16 rounded-full border border-secondary/50 flex items-center justify-center mb-6 animate-pulse">
                         <span className="block w-2 h-2 rounded-full bg-secondary" />
                     </div>
-                    <h3 className="text-2xl font-medium tracking-widest uppercase mb-2">Location</h3>
+                    <h3 className="text-2xl font-medium tracking-widest uppercase mb-2">Ubicación</h3>
                     <p className="text-secondary/70 max-w-xs leading-relaxed">
                         {portfolioData.contact.location}
                     </p>
-                    <a href={`mailto:${portfolioData.contact.email}`} className="mt-8 hover:underline text-lg font-bold tracking-widest">
+                    <a href={`mailto:${portfolioData.contact.email}`} className="mt-4 hover:underline text-lg font-bold tracking-widest">
                         {portfolioData.contact.email}
                     </a>
+                    <p className="mt-2 hover:underline text-lg font-bold tracking-widest">
+                        {portfolioData.contact.cellphone}
+                    </p>
                 </motion.div>
 
             </div>
