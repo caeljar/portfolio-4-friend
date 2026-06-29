@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #121212;
+  --color-secondary: #E3DAC9;
+  
+  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary text-primary font-sans antialiased overflow-x-hidden m-0 p-0 selection:bg-primary selection:text-secondary;
+  }
+}
+
+/* Custom Utilities or global tweaks */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look if desired */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full border-2 border-solid border-secondary;
+}
